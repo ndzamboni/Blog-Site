@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Platypi', sans-serif, serif;
+    color: white;
+    background: rgb(49, 52, 82);
+    padding: 0%;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    padding: 50px 20vw;
+}
+
+.darkBlue {
+    background: #313452;
+}
+
+.yellow {
+    background: #EDAE49;
+}
+
+.red {
+    background: #D1495B;
+}
+
+.blue {
+    background: #30638E;
+}
+
+.teal {
+    background: #00798C;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('./layer1.svg');
+}
+
+

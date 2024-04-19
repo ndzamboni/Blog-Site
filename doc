@@ -60,7 +60,6 @@ THEN I am presented with a link to the developer's portfolio.
 Your file structure should look like the following:
 
 ```md
-
 my-blog
 ├── assets
 │   ├── css
