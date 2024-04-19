@@ -12,29 +12,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" 
     rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/form.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/blog.css"> -->
 </head>
 <body>
-    <header class="header">
-        <div class="spacer layer1">
-        <h1>The Zamboni Zone Blog</h1>
-        <button id="mode-toggle" onclick="toggleMode()">Toggle Mode</button>
-    </div></div>
+    <header>
+        <div class="spacer">
+            <br>
+            <h1>The Zamboni Zone Blog</h1>
+            <button class="button" id="mode-toggle" onclick="toggleMode()">Toggle Mode</button>
+    </div>
     </header>
     
     <section class="yellow">
-        <h1>Nice Curves</h1>
-        <p>what's on your mind?</p>
+        <form id="blogForm">
+        <label for="username">Username: </label><br>
+        <input type="text" id="username" placeholder="Enter your username" required><br>
+        <label for="postSubject">Subject: </label><br>
+        <input type="text" id="postSubject" placeholder="Subject of your post" required><br>
+        <label for="postContent">Content: </label><br>
+        <textarea id="postContent" rows="4" placeholder="Content of your post"required></textarea>
+        <button type="submit">Submit</button>
+        </form>
     </section>
 
+    <footer>
+        <div class="footerSpacer">
+            <h2>Made with love by: Nick Zamboni</h2>
+            <h3>Check out my GitHub Here:</h3>
+        </div>
+    </footer>
 
-    <section>
-        <h1>Nice Curves</h1>
-        <p></p>
-    </section>
-    <section>
-        <h1>Nice Curves</h1>
-        <p></p>
-    </section>
     
 </body>
 </html>

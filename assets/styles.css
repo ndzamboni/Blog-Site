@@ -6,6 +6,22 @@ body {
     padding: 0%;
 }
 
+/* header is getting eaten by the content. need to figure that out */
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    /* overflow: hidden; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./layer1.svg');
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 section {
     position: relative;
     display: flex;
@@ -35,17 +51,20 @@ section {
     background: #00798C;
 }
 
-.spacer {
+.footerSpacer {
     aspect-ratio: 960/300;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-image: url('./footer-spacer.svg');
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.layer1 {
-    background-image: url('./layer1.svg');
-}
 
 
