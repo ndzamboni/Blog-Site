@@ -6,7 +6,12 @@ body {
     padding: 0%;
 }
 
+h1 {
+    padding-top: 10%;
+}
+
 /* header is getting eaten by the content. need to figure that out */
+/* solved */
 .spacer {
     aspect-ratio: 960/300;
     width: 100%;
@@ -22,6 +27,16 @@ body {
     justify-content: space-around;
 }
 
+input {
+    border: #313452;
+    border-style: groove;
+}
+
+textarea {
+    border: #313452;
+    border-style: groove;
+}
+
 section {
     position: relative;
     display: flex;
@@ -31,12 +46,42 @@ section {
     padding: 50px 20vw;
 }
 
+.button {
+    color: black;
+    padding: 1% 1%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30% 10%;
+}
+
+.submit {
+    position:inherit;
+    padding: 2%;
+    margin-top: 5%;
+    color: black;
+    padding: 1% 2%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30% 10%;
+    /* box-shadow: #313452;
+    transition: box-shadow 0.5s ease; */
+} 
+
+/* .submit button:hover {
+    background-color: black;
+    background-size: 50%;
+    color: black;
+    transition: box-shadow .5s ease;
+    box-shadow: 0 0 10px 5px black;
+} */
+
 .darkBlue {
     background: #313452;
 }
 
 .yellow {
     background: #EDAE49;
+    color: #313452;
 }
 
 .red {
@@ -49,6 +94,18 @@ section {
 
 .teal {
     background: #00798C;
+}
+
+a .footer {
+    color: #EDAE49;
+}
+
+a:visited {
+    color: #EDAE49;
+}
+
+a:hover {
+    color: #D1495B;
 }
 
 .footerSpacer {
