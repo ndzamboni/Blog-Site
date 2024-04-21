@@ -39,5 +39,5 @@ displayAllPosts();
 
 // Function to navigate back to the landing page (index.html)
 function goBack() {
-    window.history.back();
+    window.location.href = 'index.html';
 }
