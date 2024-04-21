@@ -35,6 +35,8 @@ input {
 textarea {
     border: #313452;
     border-style: groove;
+    resize: horizontal;
+    width: 100%;
 }
 
 section {
@@ -234,4 +236,31 @@ a:hover {
 
 .dark-mode a:hover {
     color: #ff8a65;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        padding-top: 5%;
+    }
+
+    section {
+        padding: 50px 10vw;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        padding-top: 3%;
+        font-size: 24px;
+    }
+
+    section {
+        padding: 50px 5vw;
+    }
+
+    .spacer, .footerSpacer {
+        aspect-ratio: 16/9;
+    }
+    
 }
