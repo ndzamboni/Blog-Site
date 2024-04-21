@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: 'Platypi', sans-serif, serif;
+    color: white;
+    background: rgb(49, 52, 82);
+    padding: 0%;
+}
+
+h1 {
+    padding-top: 10%;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    /* overflow: hidden; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('#');
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
