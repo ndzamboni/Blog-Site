@@ -23,7 +23,7 @@ function displayAllPosts() {
     if (storedPosts) {
         storedPosts.forEach(postData => {
             const postDiv = document.createElement('div');
-            postDiv.classList.add('post-container');
+            postDiv.classList.add('post');
             postDiv.innerHTML = `
                 <h3>Username: ${postData.username}</h3>
                 <h2>${postData.title}</h2>

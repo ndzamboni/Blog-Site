@@ -16,18 +16,28 @@
     <header>
         <div class="spacer">
             <br>
-            <h1>The Zamboni Zone Blog</h1>
+            <h1 id="blogName">The Zamboni Zone Blog</h1>
             <label class="switch" id="toggleSwitch">
                 <input type="checkbox" id="myCheckbox">
                 <span class="slider round"></span>
-                
-        </label>
+            </label>
+            <button onclick="goBack()">Back</button>
     </div>
     </header>
 
+    <main>
     <h1>Current Blog Posts</h1>
     <div id="posts"></div>
-    <button onclick="goBack()">Back</button>
+    </main>
+    
+    <footer>
+        <div class="footerSpacer">
+            <h2>Made with 💛 by: Nick Zamboni</h2>
+            <h3>Check out my  
+                <a href="https://github.com/ndzamboni" target="_blank">GitHub!</a>
+            </h3>
+        </div>
+    </footer>
     
 
 
