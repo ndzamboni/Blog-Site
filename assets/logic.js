@@ -23,21 +23,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Get form data
         const username = document.getElementById('username').value;
-        const postSubject = document.getElementById('postSubject').value;
-        const postContent = document.getElementById('postContent').value;
+        const title = document.getElementById('postSubject').value;
+        const content = document.getElementById('postContent').value;
 
         // Store data to localStorage
         const postData = {
             username: username,
-            title: postSubject,
-            content: postContent,
+            title: title,
+            content: content,
         };
-        localStorage.setItem('blogPost', JSON.stringify(postData));
 
-        // Redirect to posts page
-        window.location.href = 'blog.html';
+        // Retrieve existing posts from localStorage or initialize an empty array
+        let existingPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
+
+        // Add new post to existing posts array
+        existingPosts.push(postData);
+
+        // Store updated posts array in localStorage
+        localStorage.setItem('blogPosts', JSON.stringify(existingPosts));
+
+        // Redirect to posts page with query parameter
+        window.location.href = 'blog.html?submitted=true';
     });
 });
 
 // ======================================================
+
 
