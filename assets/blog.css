@@ -177,3 +177,15 @@ h1 {
     margin-bottom: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+a .footer {
+    color: #EDAE49;
+}
+
+a:visited {
+    color: #EDAE49;
+}
+
+a:hover {
+    color: #D1495B;
+}
