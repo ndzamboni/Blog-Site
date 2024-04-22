@@ -8,6 +8,7 @@ body {
 
 h1 {
     padding-top: 10%;
+    font-size: 3em;
 }
 
 /* header is getting eaten by the content. need to figure that out */
