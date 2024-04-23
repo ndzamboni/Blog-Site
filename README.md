@@ -26,6 +26,7 @@ blog page will have:
     email
     blog name
 
+![Alt text](./assets/blog-shot.PNG)
 
 ## Acceptance Criteria
 
