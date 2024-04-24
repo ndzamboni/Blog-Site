@@ -1,4 +1,3 @@
-// javascript for light/mode and dark mode for blog page
 
 document.addEventListener('DOMContentLoaded', function () {
     const checkbox = document.querySelector('input[type="checkbox"]');
@@ -13,10 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ======================================================
 
-// Retrieve stored data from localStorage
 const storedPosts = JSON.parse(localStorage.getItem('blogPosts'));
 
-// Function to display all posts
 function displayAllPosts() {
     const postsDiv = document.getElementById('posts');
 
@@ -34,10 +31,8 @@ function displayAllPosts() {
     }
 }
 
-// Call the function to display all posts when the page loads
 displayAllPosts();
 
-// Function to navigate back to the landing page (index.html)
 function goBack() {
     window.location.href = 'index.html';
 }
