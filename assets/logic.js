@@ -50,3 +50,26 @@ document.addEventListener('DOMContentLoaded', function () {
 // ======================================================
 
 
+// Retrieve user preference from localStorage
+const isDarkMode = JSON.parse(localStorage.getItem('isDarkMode'));
+
+// Set initial mode based on user preference
+if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+    document.querySelector('input[type="checkbox"]').checked = true;
+}
+
+// Update user preference when mode is toggled
+document.addEventListener('DOMContentLoaded', function () {
+    const checkbox = document.querySelector('input[type="checkbox"]');
+    checkbox.addEventListener('change', function () {
+        if (this.checked) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('isDarkMode', true);
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('isDarkMode', false);
+        }    
+    });
+});
+
